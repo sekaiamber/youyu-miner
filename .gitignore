@@ -1,0 +1,6 @@
+plugins
+platforms
+node_modules/
+public/
+dist
+tmp

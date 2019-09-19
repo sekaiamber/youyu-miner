@@ -1,0 +1,83 @@
+#deposit {
+  margin-top: 0.56rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+
+  .unit {
+    text-align: center;
+  }
+
+  .qrcode-container {
+    padding: 0.12rem;
+    border-radius: 0.06rem;
+    text-align: center;
+
+    img {
+      width: 1.25rem;
+    }
+
+    .btn {
+      margin: 0 auto;
+      width: 1.25rem;
+      height: 0.36rem;
+      background: rgba($color: #1D0D0D, $alpha: 0.1);
+      font-size: 0.14rem;
+      height: auto;
+      margin: 0.2rem auto;
+      padding: 0.06rem 0.15rem;
+      border-radius: 0.27rem;
+    }
+
+    .desc {
+      color: #22222C;
+      margin-top: 0.12rem;
+    }
+
+    .address {
+      font-size: 0.12rem;
+    }
+  }
+
+  .tip {
+    background: rgba($color: #322121, $alpha: 0.1);
+    padding: 0.12rem;
+    text-align: justify;
+  }
+
+  .history {
+    .item {
+      position: relative;
+      display: flex;
+      padding: 0.2rem 0.1rem;
+
+      .logo {
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: 0.4rem;
+      }
+
+      .center {
+        font-size: 0.14rem;
+        flex-shrink: 1;
+        flex-grow: 1;
+        overflow: hidden;
+        margin: 0 0.1rem;
+      }
+
+      .amount {
+        flex-grow: 0;
+        flex-shrink: 0;
+      }
+
+      .txid {
+        font-weight: 400;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .time {
+        opacity: 0.4;
+      }
+    }
+  }
+}

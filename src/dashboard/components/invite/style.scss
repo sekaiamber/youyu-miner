@@ -1,0 +1,32 @@
+#invite {
+  margin-top: 0.56rem;
+  text-align: center;
+
+  .qrcode {
+    padding-top: 0.7rem;
+    
+    img {
+      width: 1.25rem;
+    }
+  }
+
+  .code {
+    margin-top: 0.38rem;
+    font-weight: 400;
+    font-size: 0.2rem;
+  }
+
+  .url {
+    margin-top: 0.2rem;
+  }
+
+  .btn {
+    color: #fff;
+    background: linear-gradient(to right, #D2B07A 0%, #F0D7B3 100%);
+    padding: 0.15rem;
+    height: 0.54rem;
+    border-radius: 0.27rem;
+    margin-top: 0.6rem;
+    color: #1D0D0D;
+  }
+}

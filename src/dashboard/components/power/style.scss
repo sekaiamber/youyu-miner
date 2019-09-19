@@ -1,0 +1,74 @@
+#power {
+  padding-top: 0.44rem;
+
+  .top {
+    display: flex;
+    margin: 0.14rem 0;
+
+    &>div {
+      width: 50%;
+      text-align: center;
+
+      .value {
+        font-size: 0.36rem;
+        font-weight: 400;
+
+        span {
+          font-size: 0.24rem;
+        }
+      }
+    }
+  }
+
+  .item {
+    position: relative;
+    display: flex;
+    padding: 0.2rem 0.1rem;
+    align-items: center;
+    margin-top: 0.1rem;
+
+    .logo {
+      flex-grow: 0;
+      flex-shrink: 0;
+      width: 0.4rem;
+    }
+
+    .center {
+      font-size: 0.14rem;
+      flex-shrink: 1;
+      flex-grow: 1;
+      overflow: hidden;
+      margin: 0 0.1rem;
+    }
+
+    .amount {
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+
+    .txid {
+      font-weight: 400;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .time {
+      opacity: 0.4;
+    }
+  }
+
+  .item.vip {
+    background: linear-gradient(to left, #D2B07A 0%, #F0D7B3 100%);
+  }
+
+  .big {
+    width: 100%;
+    display: block;
+    padding: 0.09rem 0;
+    border-radius: 0.03rem;
+    text-align: center;
+    background: linear-gradient(to right, #D2B07A 0%, #F0D7B3 100%);
+    color: #fff;
+    margin-bottom: 0.12rem;
+  }
+}

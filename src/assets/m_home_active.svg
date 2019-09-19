@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Pie</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="昨日收益" transform="translate(-36.000000, -744.000000)" fill="#D2B07A">
+            <path d="M48.1661755,754.389274 L48.1661755,744 C53.5117237,744.560362 57.7187682,748.954472 58,754.389274 M57.8785472,756.711419 C57.0452526,761.975697 52.4953684,766 47.0074921,766 C40.9282221,766 36,761.061616 36,754.96981 C36,749.270144 40.3141667,744.580184 45.8488087,744 L45.8488087,756.711419" id="Pie"></path>
+        </g>
+    </g>
+</svg>

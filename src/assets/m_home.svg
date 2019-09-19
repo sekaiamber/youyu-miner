@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Pie</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.3">
+        <g id="iPhone-XS" transform="translate(-52.000000, -743.000000)" fill="#FFFFFF">
+            <path d="M64.1661755,753.389274 L64.1661755,743 C69.5117237,743.560362 73.7187682,747.954472 74,753.389274 M73.8785472,755.711419 C73.0452526,760.975697 68.4953684,765 63.0074921,765 C56.9282221,765 52,760.061616 52,753.96981 C52,748.270144 56.3141667,743.580184 61.8488087,743 L61.8488087,755.711419" id="Pie"></path>
+        </g>
+    </g>
+</svg>

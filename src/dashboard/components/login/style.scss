@@ -1,0 +1,32 @@
+#login {
+  padding-top: 0.56rem;
+
+  .logo-container {
+    padding: 0.33rem 0;
+    text-align: center;
+
+    img {
+      width: 0.8rem;
+    }
+  }
+
+  .form {
+    .item {
+      input {
+        text-align: center;
+      }
+    }
+  }
+
+  .submit {
+    padding: 0.24rem 0;
+
+    button {
+      width: 100%;
+    }
+  }
+
+  .opts {
+    text-align: center;
+  }
+}

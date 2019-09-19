@@ -1,0 +1,30 @@
+#signup {
+  padding-top: 0.56rem;
+
+  .verify {
+    position: relative;
+
+    a {
+      position: absolute;
+      right: 0.14rem;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+
+  button {
+    width: 100%;
+    border: none;
+    border-radius: 0.02rem;
+    font-size: 0.16rem;
+    padding: 0.12rem 0.24rem;
+
+    &[disabled] {
+      opacity: 0.5;
+    }
+  }
+
+  .submit {
+    margin-top: 0.5rem;
+  }
+}

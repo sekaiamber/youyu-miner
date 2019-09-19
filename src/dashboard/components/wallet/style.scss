@@ -1,0 +1,142 @@
+#wallet {
+  padding-top: 0.56rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+
+  .top-select .option {
+    width: 0.6rem;
+  }
+
+  .info {
+    margin: 0.25rem 0;
+
+    .row {
+      display: flex;
+      padding: 0.13rem 0.15rem;
+
+      .me {
+        width: 40%;
+      }
+      .block {
+        width: 60%;
+      }
+
+      .key {
+        font-size: 0.18rem;
+      }
+      .value {
+        font-size: 0.12rem;
+        opacity: 0.4;
+      }
+    }
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .card {
+    text-align: center;
+    width: 50%;
+
+    .top {
+      font-size: 0.17rem;
+    }
+    .amount {
+      font-size: 0.48rem;
+      font-weight: 400;
+      margin: 0.1rem 0;
+    }
+    .value span {
+      padding: 0.06rem 0.16rem;
+      height: 0.3rem;
+      border-radius: 0.15rem;
+    }
+  }
+
+  .opt {
+    display: flex;
+    margin: 0.25rem -0.05rem;
+
+    .opt-btn {
+      flex-grow: 1;
+      margin: 0 0.05rem;
+      color: #1D0D0D;
+      background: linear-gradient(to right, #D2B07A 0%, #F0D7B3 100%);
+      font-size: 0.16rem;
+      font-weight: 400;
+      padding: 0.1rem 0.15rem;
+      border-radius: 0.27rem;
+      margin-top: 0.12rem;
+      text-align: center;
+      width: 100%;
+      transition: all ease 0.3s;
+    }
+  }
+
+  .history {
+    .item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.1rem;
+
+      .logo {
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: 0.4rem;
+      }
+
+      .center {
+        font-size: 0.14rem;
+        flex-shrink: 1;
+        flex-grow: 1;
+        overflow: hidden;
+        margin: 0 0.1rem;
+      }
+
+      .amount {
+        flex-grow: 0;
+        flex-shrink: 0;
+      }
+
+      .txid {
+        font-weight: 400;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .time {
+        color: rgba($color: #000, $alpha: 0.4);
+      }
+    }
+
+    .loading {
+      text-align: center;
+    }
+  }
+
+  .big {
+    color: #1D0D0D;
+    background: linear-gradient(to right, #D2B07A 0%, #F0D7B3 100%);
+    font-size: 0.16rem;
+    font-weight: 400;
+    padding: 0.1rem 0.15rem;
+    border-radius: 0.27rem;
+    margin-top: 0.12rem;
+    text-align: center;
+    width: 100%;
+    transition: all ease 0.3s;
+    display: block;
+
+    i {
+      font-size: 0.3rem;
+      vertical-align: middle;
+      margin-right: 0.06rem;
+    }
+
+    span {
+      vertical-align: middle;
+    }
+  }
+}
