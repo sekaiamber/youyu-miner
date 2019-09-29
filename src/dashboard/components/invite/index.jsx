@@ -10,7 +10,7 @@ import './style.scss';
 
 // TODO:
 function getUrl() {
-  return 'https://pangmayi.net/';
+  return 'https://youyu.io/';
 }
 
 // images

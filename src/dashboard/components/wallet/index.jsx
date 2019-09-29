@@ -168,9 +168,9 @@ class Wallet extends Component {
         <div className="big-container">
           <Link className="big" to="/buy"><Icon type="transaction" /> <span>算力租赁</span></Link>
           <Link className="big" to="/orders"><Icon type="account-book" /> <span>我的算力</span></Link>
-          {accountInfo.can_experience && (
+          {/* {accountInfo.can_experience && (
             <a className="big" onClick={this.handleExperience}><Icon type="gift" /> <span>体验矿机</span></a>
-          )}
+          )} */}
         </div>
       </div>
     );

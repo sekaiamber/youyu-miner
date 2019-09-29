@@ -53,7 +53,7 @@ class Me extends Component {
           </Link>
           <Link to="/me" className="link">
             <div><span className="icon"><img src={linkImg5} alt="" /></span> <span>联系我们</span></div>
-            <div>客服微信：csg-868</div>
+            <div>客服微信：cat1878</div>
           </Link>
           <Link to="/invite" className="link">
             <div><span className="icon"><img src={linkImg6} alt="" /></span> <span>APP下载</span></div>

@@ -12,6 +12,16 @@ header {
   transition: all ease 0.3s;
   border-bottom: transparent solid 1px;
 
+  padding-top: constant(safe-area-inset-top) !important;
+  /* Status bar height on iOS 11+ */
+  padding-top: env(safe-area-inset-top) !important;
+  box-sizing: border-box;
+
+  // padding-left: 0 !important;
+  // padding-right: 0 !important;
+  // margin-left: 0.15rem;
+  // margin-right: 0.15rem;
+
   &.top {
     background-color: #201A32;
     border-bottom-color: rgba($color: #6C7B8A, $alpha: 0.4);

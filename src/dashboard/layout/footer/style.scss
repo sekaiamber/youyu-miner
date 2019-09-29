@@ -9,7 +9,9 @@ footer {
   transform: translate(0, 0);
   transition: all ease 0.3s;
   height: 0.62rem;
-
+  box-sizing: content-box;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
   .item {
     width: 25%;
     text-align: center;
