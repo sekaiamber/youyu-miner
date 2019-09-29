@@ -21,12 +21,13 @@
   }
 
   .btn {
+    width: 100%;
+    display: block;
+    padding: 0.06rem 0.08rem;
+    border-radius: 0.03rem;
+    text-align: center;
+    background: #6C7B8A;
     color: #fff;
-    background: linear-gradient(to right, #D2B07A 0%, #F0D7B3 100%);
-    padding: 0.15rem;
-    height: 0.54rem;
-    border-radius: 0.27rem;
-    margin-top: 0.6rem;
-    color: #1D0D0D;
+    margin-top: 0.5rem;
   }
 }

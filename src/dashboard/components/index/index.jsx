@@ -119,17 +119,19 @@ class Index extends Component {
           </Carousel>
         </div>
         <div className="pad shadow-pad">
-          <div className="top-select">
-            <span>
-              <span className={classnames('option', { active: use === 'btc' })} onClick={this.handleChangeUse.bind(this, 'btc')}>BTC</span>
-              <span className={classnames('option', { active: use === 'ltc' })} onClick={this.handleChangeUse.bind(this, 'ltc')}>LTC</span>
-            </span>
+          <div className="pad-header">
+            <div className="name">昨日收益</div>
+            <div className="top-select">
+              <span>
+                <span className={classnames('option', { active: use === 'btc' })} onClick={this.handleChangeUse.bind(this, 'btc')}>BTC</span>
+                <span className={classnames('option', { active: use === 'ltc' })} onClick={this.handleChangeUse.bind(this, 'ltc')}>LTC</span>
+              </span>
+            </div>
           </div>
           <div className="earn" onClick={this.handleRedirect.bind(this, '/activities')}>
-            <div className="name">昨日收益</div>
             <div className="yesterday">{useWallet.yesterday}</div>
             <div className="total">
-              <div>您在胖蚂蚁总计收获</div>
+              <div>您在佑鱼总计收获</div>
               <div>{useWallet.total} {useWallet.name}</div>
             </div>
           </div>

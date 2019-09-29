@@ -1,6 +1,17 @@
 #order {
   margin-top: 0.56rem;
 
+  .shadow-pad {
+    background: #43485B;
+    color: #fff;
+  }
+
+  .continue-btn {
+    background: #6C7B8A;
+    color: #fff;
+    border: none;
+  }
+
   .list {
     padding-top: 0.12rem;
 
@@ -20,7 +31,6 @@
     display: flex;
     padding: 0.2rem 0.1rem;
     border-radius: 0.08rem;
-    color: #1D0D0D;
     align-items: center;
     margin-bottom: 0.1rem;
 

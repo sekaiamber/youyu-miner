@@ -45,7 +45,7 @@ class Order extends Component {
               okText="确认"
               cancelText="取消"
             >
-              <Button type="primary">一键续租</Button>
+              <Button type="primary" className="continue-btn">一键续租</Button>
             </Popconfirm>
           )}
         </div>

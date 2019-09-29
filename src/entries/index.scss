@@ -4,12 +4,14 @@
 // @import '~antd/dist/antd.css';
 html {
   font-size: 100px;
+  background: #1C162E;
 }
 
 body {
   font-size: 0.14rem;
   font-weight: 300;
-  color: #000000;
+  color: #fff;
+  background-color: transparent;
   // perspective: 300;
 
   &.welcome {
@@ -23,10 +25,10 @@ input {
 }
 
 button {
-  background-image: linear-gradient(to right, #D2B07A 0%, #F0D7B3 100%);
-  color: #1D0D0D;
+  background: #fff;
+  color: #1C162E;
   border: none;
-  border-radius: 0.02rem;
+  border-radius: 0.3rem;
   font-size: 0.16rem;
   padding: 0.12rem 0.24rem;
   outline: none;
@@ -34,7 +36,7 @@ button {
 
 a {
   text-decoration: none;
-  color: #D2B07A;
+  color: #83b2ff;
   font-weight: 400;
 }
 
@@ -80,16 +82,17 @@ a {
     position: relative;
 
     input {
-      border: none;
+      border: #43485B solid 1px;
+      border-radius: 0.03rem;
       width: 100%;
       line-height: 3;
       padding: 0;
       background: rgba($color: #322121, $alpha: 0.1);
-      color: #322121;
+      color: #fff;
       padding: 0 0.14rem;
 
       &::placeholder {
-        color: #c0b3a1;
+        color: #b8c0e0;
       }
     }
   }
@@ -166,7 +169,7 @@ a {
     &.active {
       font-weight: 500;
       opacity: 1;
-      border-bottom-color: #474747;
+      border-bottom-color: #fff;
     }
   }
 }

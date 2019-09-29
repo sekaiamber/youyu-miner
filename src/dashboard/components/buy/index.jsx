@@ -15,7 +15,7 @@ import './style.scss';
 import buyUsdtImg from '../../../assets/usdt-x.png';
 import ltcImg from '../../../assets/ltc-x.png';
 import btcImg from '../../../assets/btc-x.png';
-import pangmayiImg from '../../../assets/position.jpg';
+import jiweiImg from '../../../assets/position.jpg';
 
 const icons = {
   btc: btcImg,
@@ -48,12 +48,12 @@ class Buy extends Component {
   getItemList(list, icon) {
     const { form } = this.state;
     return list.map(product => (
-      <div className="item balance shadow-pad" key={product.id}>
+      <div className="item shadow-pad" key={product.id}>
         <div className="logo">
           <img src={icon || icons[product.currency.toLowerCase()]} alt="" />
         </div>
         <div className="center">
-          {product.product_type == 'buy_position' ? (
+          {product.product_type === 'buy_position' ? (
             <div className="txid">{product.power}机位 <span>{product.price} USDT({product.days}天/期)</span></div>
           ) : (
             <div className="txid">{product.power}T <span>{product.price} USDT({product.days}天/期)</span></div>
@@ -97,10 +97,14 @@ class Buy extends Component {
   }
 
   handleSubmitOrder = () => {
-    const { form, submitting } = this.state;
+    const { form, submitting, checked } = this.state;
     const { dispatch } = this.props;
 
     if (submitting) return;
+    if (!checked) {
+      message.error('请同意《佑鱼风险提示》');
+      return;
+    }
 
     this.setState({
       submitting: true,
@@ -193,7 +197,7 @@ class Buy extends Component {
 
     return (
       <div id="buy" className="container">
-        <div className="item balance">
+        <div className="item balance shadow-pad">
           <img className="logo" src={buyUsdtImg} alt="" />
           <div className="center">
             <div className="txid">{accountInfo.usdt_balance} <span>USDT</span></div>
@@ -211,7 +215,7 @@ class Buy extends Component {
         <div className="product-group-title">购买算力包</div>
         {list.buy_products && this.getItemList(list.buy_products)}
         <div className="product-group-title">矿场机位（限时预约，付款后30天后开始产生收益）</div>
-        {list.buy_position_products && this.getItemList(list.buy_position_products, pangmayiImg)}
+        {list.buy_position_products && this.getItemList(list.buy_position_products, jiweiImg)}
 
 
         <div className="footer">
@@ -228,7 +232,7 @@ class Buy extends Component {
           <div className="order-modal" onClick={this.handleCloseModal}>
             <div className="order-container">
               {Object.keys(form).map(id => form[id]).map(order => (
-                <div className="item balance shadow-pad" key={order.product.id}>
+                <div className="item shadow-pad" key={order.product.id}>
                   <div className="logo">
                     <img src={icons[order.product.currency.toLowerCase()]} alt="" />
                   </div>
@@ -239,7 +243,7 @@ class Buy extends Component {
                   <div className="amount check">X{order.count}</div>
                 </div>
               ))}
-              <div className="check"><Checkbox onChange={this.handleCheckChange} checked={checked}>同意</Checkbox><a onClick={() => this.setState({ showTip: true })}>《胖蚂蚁风险提示》</a></div>
+              <div className="check"><Checkbox onChange={this.handleCheckChange} checked={checked}>同意</Checkbox><a onClick={() => this.setState({ showTip: true })}>《佑鱼风险提示》</a></div>
               <div className="submit" onClick={this.handleSubmitOrder}>
                 {submitting ? (
                   <Spin />
@@ -254,13 +258,13 @@ class Buy extends Component {
           <div className="order-modal" onClick={this.handleCloseTipModal}>
             <div className="order-container">
               <div className="tip">
-                <p>您正在进行的是由胖蚂蚁提供数字货币相关的云算力理财服务。胖蚂蚁在此就云计算服务活动的风险及禁止性行为向您提示如下：
+                <p>您正在进行的是由佑鱼提供数字货币相关的云算力理财服务。佑鱼在此就云计算服务活动的风险及禁止性行为向您提示如下：
                   <ol>
-                    <li>数字货币相关的云算力服务是您与胖蚂蚁平台约定的且通过胖蚂蚁平台展示的云算力服务，参考年回报率不代表您最终实际取得的利息或回报。
+                    <li>数字货币相关的云算力服务是您与佑鱼平台约定的且通过佑鱼平台展示的云算力服务，参考年回报率不代表您最终实际取得的利息或回报。
                       <ol>
-                        <li>租赁客户胖蚂蚁保证您本金的百分之百安全，但不对您获得的利息或回报率作出任何承诺、保证。</li>
-                        <li>购买客户存在不能够按期收回本金的风险，胖蚂蚁不对购买算力客户的本金收回及可获利息或回报金额作出任何承诺、保证。</li>
-                        <li>机位购买客户胖蚂蚁保证您本金及回报利润的稳定性。</li>
+                        <li>租赁客户佑鱼保证您本金的百分之百安全，但不对您获得的利息或回报率作出任何承诺、保证。</li>
+                        <li>购买客户存在不能够按期收回本金的风险，佑鱼不对购买算力客户的本金收回及可获利息或回报金额作出任何承诺、保证。</li>
+                        <li>机位购买客户佑鱼保证您本金及回报利润的稳定性。</li>
                       </ol>
                     </li>
                     <li>您作为被服务人，不得从事以下行为或存在以下情形：
@@ -272,8 +276,8 @@ class Buy extends Component {
                       </ol>
                     </li>
                     <li>您确认已经知悉数字货币相关的云计算服务的风险，保证不存在从事云算力服务活动的禁止性行为，承诺具备与参与云算力服务相适应的风险意识、风险识别能力、拥有非保本类金融产品的投资经历并熟悉互联网，承诺自行承担投资产生的本息损失。</li>
-                    <li>客户应了解并接受，如因自然灾害（洪水、泥石流、地震、飓风等）、政策影响（国家发布文件等）、战争、政治动荡等不可抗力造成的停电、矿场及矿机损坏，本合同自动终止，双方不得相互追究违约责任，租赁客户本金足额退还，购买客户胖蚂蚁可协助客户处理后续问题，但不承担任何责任，由此造成的损失须自行承担。</li>
-                    <li>胖蚂蚁所列产品均不涉及数字资产交易，若甲方自行参与第三方的数字资产交易，应当自行承担责任和风险。</li>
+                    <li>客户应了解并接受，如因自然灾害（洪水、泥石流、地震、飓风等）、政策影响（国家发布文件等）、战争、政治动荡等不可抗力造成的停电、矿场及矿机损坏，本合同自动终止，双方不得相互追究违约责任，租赁客户本金足额退还，购买客户佑鱼可协助客户处理后续问题，但不承担任何责任，由此造成的损失须自行承担。</li>
+                    <li>佑鱼所列产品均不涉及数字资产交易，若甲方自行参与第三方的数字资产交易，应当自行承担责任和风险。</li>
                   </ol>
                 </p>
               </div>

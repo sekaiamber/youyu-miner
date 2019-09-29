@@ -1,7 +1,7 @@
 /* eslint-disable react/destructuring-assignment */
 import { connect } from 'dva';
 import React, { Component } from 'react';
-import logoImg from '../../../assets/pangmayi-x.png';
+import logoImg from '../../../assets/youyu-x.png';
 import message from '../../../utils/message';
 import vibration from '../../../utils/vibration';
 

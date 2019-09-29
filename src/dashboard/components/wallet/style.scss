@@ -9,6 +9,8 @@
 
   .info {
     margin: 0.25rem 0;
+    border-radius: 0.15rem;
+    background-image: linear-gradient(to right bottom, #247BCB 0%, #14CBD2 100%);
 
     .row {
       display: flex;
@@ -46,7 +48,7 @@
     .amount {
       font-size: 0.48rem;
       font-weight: 400;
-      margin: 0.1rem 0;
+      margin-top: 0.1rem;
     }
     .value span {
       padding: 0.06rem 0.16rem;
@@ -63,7 +65,7 @@
       flex-grow: 1;
       margin: 0 0.05rem;
       color: #1D0D0D;
-      background: linear-gradient(to right, #D2B07A 0%, #F0D7B3 100%);
+      background: #fff;
       font-size: 0.16rem;
       font-weight: 400;
       padding: 0.1rem 0.15rem;
@@ -116,9 +118,13 @@
     }
   }
 
+  .big-container {
+    padding-bottom: 0.2rem;
+  }
+
   .big {
     color: #1D0D0D;
-    background: linear-gradient(to right, #D2B07A 0%, #F0D7B3 100%);
+    background: #fff;
     font-size: 0.16rem;
     font-weight: 400;
     padding: 0.1rem 0.15rem;

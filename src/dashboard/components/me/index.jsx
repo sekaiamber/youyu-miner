@@ -8,7 +8,7 @@ import { Link } from 'dva/router';
 import './style.scss';
 
 // images
-import avatarImg from '../../../assets/pangmayi-x.png';
+import avatarImg from '../../../assets/youyu-x.png';
 import linkImg1 from '../../../assets/me_link_1.svg';
 import linkImg2 from '../../../assets/me_link_2.svg';
 import linkImg3 from '../../../assets/me_link_3.svg';

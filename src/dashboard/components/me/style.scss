@@ -2,7 +2,8 @@
   min-height: 100vh;
 
   .block {
-    background: #fff;
+    background: #43485B;
+    color: #fff;
     margin-bottom: 0.12rem;
   }
 
@@ -28,7 +29,8 @@
 
     .code {
       font-size: 0.16rem;
-      background: linear-gradient(to right, #D2B07A 0%, #F0D7B3 100%);
+      background: #6C7B8A;
+      color: #fff;
       position: absolute;
       bottom: 0;
       left: 50%;
@@ -54,11 +56,11 @@
       align-items: center;
       justify-content: space-between;
       padding: 0.12rem 0;
-      color: #000;
+      color: #fff;
       font-weight: 300;
 
       div:first-child {
-        color: #000;
+        color: #fff;
       }
     }
 
@@ -93,5 +95,5 @@
 }
 
 #main.me {
-  background: #efefef;
+  // background: #efefef;
 }

@@ -157,7 +157,7 @@ class Transfer extends Component {
     // }];
 
     return (
-      <div id="withdraw" className={classnames('container', { usdt: useWallet.unit === 'USDT' })}>
+      <div id="transfer" className={classnames('container', { usdt: useWallet.unit === 'USDT' })}>
         <div className="banner">
           <div>可转账余额</div>
           <div>{useWallet.balance} {useWallet.unit}</div>

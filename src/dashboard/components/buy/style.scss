@@ -15,12 +15,16 @@
     font-weight: 400;
   }
 
+  .shadow-pad {
+    background: #43485B;
+    color: #fff;
+  }
+
   .item {
     position: relative;
     display: flex;
     padding: 0.2rem 0.1rem;
     border-radius: 0.08rem;
-    color: #1D0D0D;
     align-items: center;
     margin-bottom: 0.1rem;
 
@@ -33,7 +37,7 @@
       padding: 0.06rem 0.08rem;
       border-radius: 0.03rem;
       text-align: center;
-      background: #452E2E;
+      background: #6C7B8A;
       color: #fff;
     }
 
@@ -74,10 +78,12 @@
         display: block;
         height: 0.32rem;
         text-align: center;
-        width: 0.25rem;
+        width: 0.3rem;
         z-index: 1;
         line-height: 0.3rem;
         font-size: 0.2rem;
+        background: #6C7B8A;
+        color: #fff;
       }
 
       .remain {
@@ -88,9 +94,11 @@
 
       .minus {
         left: 0;
+        border-radius: 0.06rem 0 0 0.06rem;
       }
       .plus {
         right: 0;
+        border-radius: 0 0.06rem 0.06rem 0;
       }
     }
 
@@ -109,8 +117,13 @@
     }
 
     .amount-input {
-      width: 0.8rem;
+      width: 0.9rem;
       text-align: center;
+      background: transparent;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      color: #fff;
     }
   }
 
@@ -126,7 +139,7 @@
     animation: buy-footer-show 0.3s ease;
     transform: translate(0, 0);
     left: 0;
-    border-top: #EEEFF0 solid 1px;
+    background: #201A32;
 
     .info {
       font-size: 0.12rem;
@@ -146,7 +159,6 @@
     }
 
     .info-container {
-      background: #fff;
       flex-grow: 1;
       flex-shrink: 1;
     }
@@ -154,8 +166,8 @@
     .btn-container {
       flex-grow: 0;
       flex-shrink: 0;
-      background: linear-gradient(to right, #D2B07A 0%, #F0D7B3 100%);
-      color: #1D0D0D;
+      background: #6C7B8A;
+      color: #fff;
     }
 
     .info-container,
@@ -178,7 +190,6 @@
       animation: buy-modal-show 0.3s ease;
 
       a {
-        color: #D2B07A;
         font-size: 0.14rem;
       }
 
@@ -192,7 +203,8 @@
       }
     }
     &-container {
-      background: #fff;
+      background: #43485B;
+      color: rgba($color: #000000, $alpha: 0.65);
       padding: 0.2rem;
       border-radius: 0.05rem;
       position: absolute;
@@ -200,6 +212,15 @@
       left: 50%;
       width: 80%;
       transform: translate(-50%, -50%);
+      color: #fff;
+
+      .ant-checkbox-wrapper {
+        color: #fff;
+      }
+
+      .shadow-pad {
+        background: #585e71;
+      }
 
       .item {
         display: flex;
@@ -217,8 +238,8 @@
         font-size: 0.16rem;
         margin-top: 0.16rem;
         font-weight: 400;
-        background: linear-gradient(to right, #D2B07A 0%, #F0D7B3 100%);
-        color: #1D0D0D;
+        background: #6C7B8A;
+        color: #fff;
         padding: 0.06rem 0;
         border-radius: 0.06rem;
       }

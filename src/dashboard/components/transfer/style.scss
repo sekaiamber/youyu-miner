@@ -1,4 +1,4 @@
-#withdraw {
+#transfer {
   margin-top: 0.56rem;
   padding-left: 0.3rem;
   padding-right: 0.3rem;
@@ -43,15 +43,15 @@
   }
   .warn {
     font-size: 0.12rem;
-    color: red;
+    color: #ffb3b3;
     padding: 0.06rem;
-    background: #fff0f0;
+    background: rgba($color: #fff0f0, $alpha: 0.15);
     margin-bottom: 0.06rem;
   }
 
   .btn {
     color: #1D0D0D;
-    background: linear-gradient(to right, #D2B07A 0%, #F0D7B3 100%);
+    background: #fff;
     font-size: 0.16rem;
     font-weight: 400;
     padding: 0.1rem 0.15rem;

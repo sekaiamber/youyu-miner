@@ -97,12 +97,12 @@ class Power extends Component {
 function mapStateToProps({ account }) {
   const {
     subuser,
-    invite
+    invite,
   } = account;
 
   return {
     subuser,
-    invite
+    invite,
   };
 }
 

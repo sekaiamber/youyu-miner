@@ -4,12 +4,11 @@ footer {
   left: 0;
   width: 100vw;
   display: flex;
-  background: #fff;
+  background: #201A32;
   z-index: 3;
   transform: translate(0, 0);
   transition: all ease 0.3s;
   height: 0.62rem;
-  border-top: #EEEFF0 solid 1px;
 
   .item {
     width: 25%;
@@ -19,7 +18,7 @@ footer {
       display: block;
       height: 0.62rem;
       padding-top: 0.12rem;
-      color: rgba($color: #b68e4d, $alpha: 0.4);
+      color: rgba($color: #fff, $alpha: 0.4);
 
       span {
         display: block;
@@ -40,7 +39,7 @@ footer {
     &.active {
 
       a {
-        color: #b68e4d;
+        color: #fff;
       }
 
       img {
