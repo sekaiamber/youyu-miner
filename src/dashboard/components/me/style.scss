@@ -2,50 +2,40 @@
   min-height: 100vh;
 
   .block {
-    background: #43485B;
+    padding-left: 0.24rem;
+    padding-right: 0.24rem;
     color: #fff;
     margin-bottom: 0.12rem;
   }
 
-  .avatar {
-    height: 1rem;
-    width: 1rem;
-    overflow: hidden;
-    border-radius: 50%;
-    // background: #EDEDED;
-    text-align: center;
-    margin: 0 auto;
-    
-    img {
-      width: 100%;
-      // margin-top: 10%;
-    }
-  }
-
   .avatar-container {
-    position: relative;
-    padding-bottom: 0.6rem;
-    padding-top: 0.3rem;
+    display: flex;
+    align-items: center;
+    padding-top: 0.4rem;
+    padding-bottom: 0.2rem;
+
+    .avatar {
+      height: 0.6rem;
+      width: 0.6rem;
+      overflow: hidden;
+      border-radius: 50%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin-right: 0.16rem;
+      
+      img {
+        width: 100%;
+        // margin-top: 10%;
+      }
+    }
 
     .code {
       font-size: 0.16rem;
-      background: #6C7B8A;
-      color: #fff;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%, calc(50% - 0.4rem));
-      padding: 0.05rem 0.18rem;
-      border-radius: 0.2rem;
-      white-space: nowrap;
-      max-width: 80%;
-      text-overflow: ellipsis;
-      overflow: hidden;
+      font-weight: 400;
     }
   }
 
   .link-list {
-    padding: 0 0.12rem;
     margin-bottom: 0.1rem;
     min-height: 0.45rem;
     border: transparent 1px solid;
@@ -61,6 +51,18 @@
 
       div:first-child {
         color: #fff;
+      }
+
+      div {
+        color: #677888;
+      }
+
+      .goto {
+        color: #fff;
+      }
+
+      .goto::after {
+        content: ">";
       }
     }
 
@@ -79,11 +81,14 @@
 
 
   .logout {
-    padding: 0.12rem 0;
     text-align: center;
 
     a {
-      color: #ff2a2a;
+      background: #ff0c4e;
+      color: #fff;
+      display: block;
+      padding: 0.08rem 0;
+      border-radius: 0.02rem;
     }
   }
 

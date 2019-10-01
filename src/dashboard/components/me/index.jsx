@@ -15,6 +15,7 @@ import linkImg3 from '../../../assets/me_link_3.svg';
 import linkImg4 from '../../../assets/me_link_4.svg';
 import linkImg5 from '../../../assets/me_link_5.svg';
 import linkImg6 from '../../../assets/me_link_6.svg';
+import linkImg7 from '../../../assets/me_link_7.svg';
 
 class Me extends Component {
   handleLogout = () => {
@@ -37,19 +38,19 @@ class Me extends Component {
         <div className="link-list block">
           <Link to="/changeWithdrawPassword" className="link">
             <div><span className="icon"><img src={linkImg1} alt="" /></span> <span>钱包设置</span></div>
-            <div>&gt;</div>
+            <div className="goto" />
           </Link>
           <Link to="/changePassword" className="link">
             <div><span className="icon"><img src={linkImg2} alt="" /></span> <span>安全设置</span></div>
-            <div>&gt;</div>
+            <div className="goto" />
           </Link>
           {/* <Link to="/about" className="link">
             <div><span className="icon"><img src={linkImg3} alt="" /></span> <span>关于我们</span></div>
-            <div>&gt;</div>
+            <div className="goto" />
           </Link> */}
           <Link to="/post/qa" className="link">
             <div><span className="icon"><img src={linkImg4} alt="" /></span> <span>常见问题</span></div>
-            <div>&gt;</div>
+            <div className="goto" />
           </Link>
           <Link to="/me" className="link">
             <div><span className="icon"><img src={linkImg5} alt="" /></span> <span>联系我们</span></div>
@@ -57,29 +58,30 @@ class Me extends Component {
           </Link>
           <Link to="/invite" className="link">
             <div><span className="icon"><img src={linkImg6} alt="" /></span> <span>APP下载</span></div>
-            <div>&gt;</div>
+            <div className="goto" />
+          </Link>
+          <Link to="/me" className="link">
+            <div><span className="icon"><img src={linkImg7} alt="" /></span> <span>当前版本</span></div>
+            <div>{__VERSION__}</div>
           </Link>
         </div>
 
         {/* <div className="link-list">
           <Link to="/invite" className="link">
             <div>邀请好友</div>
-            <div>&gt;</div>
+            <div className="goto" />
           </Link>
           <Link to="/miners" className="link">
             <div>矿工管理</div>
-            <div>&gt;</div>
+            <div className="goto" />
           </Link>
           <Link to="/subuser" className="link">
             <div>我的矿工</div>
-            <div>&gt;</div>
+            <div className="goto" />
           </Link>
         </div> */}
         <div className="logout block">
           <a onClick={this.handleLogout}>退出登录</a>
-        </div>
-        <div className="version">
-          {__VERSION__}
         </div>
       </div>
     );
