@@ -214,14 +214,17 @@ class Buy extends Component {
         {list.rent_products && this.getItemList(list.rent_products)}
         {/* <div className="product-group-title">租赁算力包（无忧挖矿，到期押金全退）</div> */}
         {list.reservation_buy_products && this.getItemList(list.reservation_buy_products)}
-        {/* <div className="product-group-title">购买算力包</div>
-        {list.buy_products && this.getItemList(list.buy_products)}
-        <div className="product-group-title">矿场机位（限时预约，付款后30天后开始产生收益）</div>
-        {list.buy_position_products && this.getItemList(list.buy_position_products, jiweiImg)} */}
         <div className="product-group-title">理财套餐包（稳定理财，到期押金全退）</div>
         {list.monthly_1_products && this.getItemList(list.monthly_1_products)}
         {list.monthly_2_products && this.getItemList(list.monthly_2_products)}
-
+        {list.buy_products && list.reservation_buy_products.length > 0 ? [
+          <div className="product-group-title">购买算力包</div>,
+          list.buy_products && this.getItemList(list.buy_products),
+        ] : null}
+        {list.buy_position_products && list.buy_position_products.length > 0 ? [
+          <div className="product-group-title">矿场机位（限时预约，付款后30天后开始产生收益）</div>,
+          list.buy_position_products && this.getItemList(list.buy_position_products, jiweiImg),
+        ] : null}
         {/* {list.buy_position_products && this.getItemList(list.buy_position_products, jiweiImg)} */}
 
         <div className="footer">

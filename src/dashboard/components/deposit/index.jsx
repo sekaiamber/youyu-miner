@@ -96,7 +96,7 @@ class Deposit extends Component {
           <div className="btn" onClick={this.handleSaveImage}>保存二维码</div>
           <div className="address clipboard-target" data-clipboard-text={useWallet.address}>{useWallet.address}</div>
         </div>
-        <div className="shadow-pad">{useWallet.unit}转入有时交易所会扣除额外手续费，请务必确定好数量后再转入，请勿向佑鱼{useWallet.unit}地址充值任何非{useWallet.unit === 'USDT' ? 'OMNI网络的' : ''}{useWallet.unit}资产。</div>
+        <div className="shadow-pad">{useWallet.unit}转入有时交易所会扣除额外手续费，请务必确定好数量后再转入，请勿向佑鱼{useWallet.unit}地址充值任何非{useWallet.unit === 'USDT' ? 'ERC20网络的' : ''}{useWallet.unit}资产。</div>
         <div className="page-title">充提历史</div>
         <div className="history">
           {history === 'LOADING' ? (

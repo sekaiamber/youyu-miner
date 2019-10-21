@@ -69,22 +69,24 @@ class Order extends Component {
         {orders.length === 0 && (
           <div style={{ textAlign: 'center' }}>暂无订单</div>
         )}
-        {list.rent_products && list.rent_products.length > 0 && (
+        {((list.rent_products && list.rent_products.length > 0) || (list.reservation_buy_products && list.reservation_buy_products.length > 0)) && (
           <div>
             <div className="product-group-title">租赁算力包（无忧挖矿，到期押金全退）</div>
             {this.getItemList(list.rent_products)}
+            {this.getItemList(list.reservation_buy_products)}
+          </div>
+        )}
+        {((list.monthly_1_products && list.monthly_1_products.length > 0) || (list.monthly_2_products && list.monthly_2_products.length > 0)) && (
+          <div>
+            <div className="product-group-title">理财套餐包（稳定理财，到期押金全退</div>
+            {list.monthly_1_products && this.getItemList(list.monthly_1_products)}
+            {list.monthly_2_products && this.getItemList(list.monthly_2_products)}
           </div>
         )}
         {list.buy_products && list.buy_products.length > 0 && (
           <div>
-            <div className="product-group-title">购买矿机</div>
+            <div className="product-group-title">购买算力包</div>
             {this.getItemList(list.buy_products)}
-          </div>
-        )}
-        {list.reservation_buy_products && list.reservation_buy_products.length > 0 && (
-          <div>
-            <div className="product-group-title">购买矿机（限时预约，付款后20天后开始产生收益）</div>
-            {this.getItemList(list.reservation_buy_products)}
           </div>
         )}
         {list.buy_position_products && list.buy_position_products.length > 0 && (
@@ -123,6 +125,8 @@ function mapStateToProps({ account }) {
     reservation_buy_products: orders.filter(o => o.product_type === 'reservation_buy'),
     buy_position_products: orders.filter(o => o.product_type === 'buy_position'),
     experience: orders.filter(o => o.product_type === 'experience'),
+    monthly_1_products: orders.filter(o => o.product_type === 'monthly_1'),
+    monthly_2_products: orders.filter(o => o.product_type === 'monthly_2'),
   };
 
   return {

@@ -185,7 +185,8 @@ a {
 
 // shadow pad
 .shadow-pad {
-  background: #fff;
+  // background: #fff;
+  border-bottom: rgba(108, 123, 138, 0.4) solid 1px;
   border-radius: 0.06rem;
   min-height: 0.66rem;
   padding: 0.12rem;
